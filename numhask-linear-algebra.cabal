@@ -1,7 +1,7 @@
 name:                numhask-linear-algebra
 version:             0.1.0.0
--- synopsis:
--- description:
+synopsis:            NumHask-flavoured linear algebra 
+description:         NumHask-flavoured linear algebra 
 homepage:            https://github.com/DataHaskell/numhask-linear-algebra
 license:             BSD3
 license-file:        LICENSE
@@ -35,7 +35,10 @@ test-suite spec
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             Spec.hs
-  build-depends:       doctest
+  other-modules:       LibSpec
+  build-depends:       base >= 4.7 && < 5
+                     , doctest
+                     , numhask
                      , numhask-linear-algebra
                      , hspec
                      , tasty
