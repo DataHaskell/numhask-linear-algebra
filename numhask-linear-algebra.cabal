@@ -35,9 +35,11 @@ test-suite spec
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
   main-is:             Spec.hs
-  build-depends:       base
+  build-depends:       doctest
                      , numhask-linear-algebra
                      , hspec
+                     , tasty
+                     , tasty-quickcheck
                      , QuickCheck
 
 source-repository head
