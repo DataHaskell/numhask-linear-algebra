@@ -6,6 +6,7 @@ packages:
 extra-deps:
 - numhask-array-0.1.1.0
 - dimensions-0.3.2.0
+- typelits-witnesses-0.2.3.0
 
 # Override default flag values for local packages and extra-deps
 # flags: {}
