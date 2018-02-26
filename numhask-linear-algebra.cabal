@@ -1,0 +1,45 @@
+name:                numhask-linear-algebra
+version:             0.1.0.0
+-- synopsis:
+-- description:
+homepage:            https://github.com/DataHaskell/numhask-linear-algebra
+license:             BSD3
+license-file:        LICENSE
+author:              DataHaskell
+maintainer:          example@example.com
+copyright:           DataHaskell 2018
+category:            Numeric
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+tested-with:         GHC == 8.2.2
+
+library
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+  hs-source-dirs:      src
+  exposed-modules:     Numeric.LinearAlgebra
+  other-modules:       Numeric.LinearAlgebra.Internal
+  build-depends:       base >= 4.7 && < 5
+                     , numhask
+                     , numhask-array
+                     , containers
+                     , vector
+                     , mtl
+                     , transformers
+
+
+test-suite spec
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+  type:                exitcode-stdio-1.0
+  hs-source-dirs:      test
+  main-is:             Spec.hs
+  build-depends:       base
+                     , numhask-linear-algebra
+                     , hspec
+                     , QuickCheck
+
+source-repository head
+  type:     git
+  location: https://github.com/DataHaskell/numhask-linear-algebra
