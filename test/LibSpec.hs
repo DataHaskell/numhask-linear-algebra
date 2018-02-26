@@ -6,6 +6,9 @@ module LibSpec where
 import Test.Hspec
 -- import Test.Hspec.QuickCheck
 
+-- | copy doctest example from :
+-- https://github.com/tonyday567/numhask-array/blob/master/src/NumHask/Array/Example.hs
+
 -- $setup
 -- >>> :set -XDataKinds
 -- >>> :set -XOverloadedLists
