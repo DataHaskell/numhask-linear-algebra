@@ -1,0 +1,17 @@
+- package:
+  - name: numhask-linear-algebra
+  - section:
+    - name: test:test
+    - message:
+      - name: Redundant build-depends entry
+      - depends: numhask-linear-algebra
+
+- package:
+  - name: numhask-linear-algebra
+  - section:
+    - name: library
+    - message:
+      - name: Unused import
+      - module:
+        - name: Numeric.LinearAlgebra
+        - identifier: Numeric.LinearAlgebra.Internal

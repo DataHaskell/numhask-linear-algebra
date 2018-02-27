@@ -1,0 +1,5 @@
+- ignore: {name: Eta reduce}
+- ignore: {name: Use if}
+
+# To generate a suitable file for HLint do:
+# $ hlint --default > .hlint.yaml

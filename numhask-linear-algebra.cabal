@@ -23,27 +23,16 @@ library
   build-depends:       base >= 4.7 && < 5
                      , numhask
                      , numhask-array
-                     , containers
-                     , vector
-                     , mtl
-                     , transformers
 
-
-test-suite spec
+test-suite test
   default-language:    Haskell2010
   ghc-options:         -Wall
   type:                exitcode-stdio-1.0
   hs-source-dirs:      test
-  main-is:             Spec.hs
-  other-modules:       LibSpec
+  main-is:             test.hs
   build-depends:       base >= 4.7 && < 5
                      , doctest
-                     , numhask
                      , numhask-linear-algebra
-                     , hspec
-                     , tasty
-                     , tasty-quickcheck
-                     , QuickCheck
 
 source-repository head
   type:     git
