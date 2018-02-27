@@ -2,4 +2,11 @@
 
 [![Build Status](https://travis-ci.org/DataHaskell/numhask-linear-algebra.png)](https://travis-ci.org/DataHaskell/numhask-linear-algebra)
 
-TODO Description.
+Experimenting with shape-typed, sparse linear algebra structures and domains.
+
+recipe
+---
+
+```
+stack build --test --ghc-options -Wall --file-watch
+```
